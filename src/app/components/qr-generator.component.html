@@ -31,20 +31,79 @@
         </h1>
 
         <div class="mt-8 flex flex-wrap gap-2">
-            <button (click)="setPreset('url')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5 
-               transition-colors duration-200 text-sm font-semibold
-               dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
-                Preset URL
+            <button (click)="setPreset('url')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold
+           flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                🔗 <span>URL</span>
             </button>
-            <button (click)="setPreset('text')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5 
-               transition-colors duration-200 text-sm font-semibold
-               dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
-                Preset Texto
+
+            <button (click)="setPreset('text')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold
+           flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                📝 <span>Texto</span>
             </button>
-            <button (click)="setPreset('wifi')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5 
-               transition-colors duration-200 text-sm font-semibold
-               dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
-                Preset WiFi
+
+            <button (click)="setPreset('wifi')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold
+           flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                📶 <span>WiFi</span>
+            </button>
+
+            <button (click)="setPreset('whatsapp')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                💬 <span>WhatsApp</span>
+            </button>
+
+            <button (click)="setPreset('email')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                ✉️ <span>Email</span>
+            </button>
+
+            <button (click)="setPreset('phone')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                📞 <span>Teléfono</span>
+            </button>
+
+            <button (click)="setPreset('sms')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                📩 <span>SMS</span>
+            </button>
+
+            <button (click)="setPreset('vcard')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                👤 <span>Contacto</span>
+            </button>
+
+            <button (click)="setPreset('location')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                📍 <span>Ubicación</span>
+            </button>
+
+            <button (click)="setPreset('instagram')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                📸 <span>Instagram</span>
+            </button>
+
+            <button (click)="setPreset('linkedin')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                💼 <span>LinkedIn</span>
+            </button>
+
+            <button (click)="setPreset('event')" class="h-10 px-4 rounded-xl border border-black/10 bg-white hover:bg-black/5
+           transition-colors duration-200 text-sm font-semibold flex items-center gap-2
+           dark:bg-white/10 dark:border-white/10 dark:hover:bg-white/15">
+                📅 <span>Evento</span>
             </button>
         </div>
     </div>

@@ -68,10 +68,72 @@ export class QrGeneratorComponent {
         a.click();
     }
 
-    setPreset(type: 'url' | 'wifi' | 'text') {
-        if (type === 'url') this.value.set('https://tusitio.com');
-        if (type === 'text') this.value.set('Hola Mati 👋 QR listo');
-        if (type === 'wifi') this.value.set('WIFI:T:WPA;S:MiWifi;P:MiPassword;;');
+    setPreset(type: string) {
+        switch (type) {
+            case 'url':
+                this.value.set('https://tusitio.com');
+                break;
+
+            case 'text':
+                this.value.set('Hola 👋');
+                break;
+
+            case 'wifi':
+                this.value.set('WIFI:T:WPA;S:MiWifi;P:MiPassword;;');
+                break;
+
+            case 'whatsapp':
+                this.value.set('https://wa.me/5491123456789?text=Hola%20desde%20QR');
+                break;
+
+            case 'email':
+                this.value.set('MAILTO:contacto@email.com?subject=Hola&body=Mensaje');
+                break;
+
+            case 'phone':
+                this.value.set('TEL:+5491123456789');
+                break;
+
+            case 'sms':
+                this.value.set('SMSTO:+5491123456789:Hola!');
+                break;
+
+            case 'vcard':
+                this.value.set(
+                    `BEGIN:VCARD
+VERSION:3.0
+N:nombre
+FN:nombre completo
+ORG:QR IO
+TITLE:Título
+TEL:+5491123456789
+EMAIL:contacto@email.com
+END:VCARD`
+                );
+                break;
+
+            case 'location':
+                this.value.set('https://maps.google.com/?q=-34.6037,-58.3816');
+                break;
+
+            case 'instagram':
+                this.value.set('https://instagram.com/usuario');
+                break;
+
+            case 'linkedin':
+                this.value.set('https://linkedin.com/in/usuario');
+                break;
+
+            case 'event':
+                this.value.set(
+                    `BEGIN:VEVENT
+SUMMARY:Evento
+DTSTART:20260301T180000
+DTEND:20260301T190000
+END:VEVENT`
+                );
+                break;
+        }
     }
 
     copyText() {
